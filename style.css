@@ -1,108 +1,105 @@
-.Footer-container {
-    background-color: rgb(2, 1, 16);
-
-    color: white;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
 }
 
-body {
-
-    font-family: 'Inter', sans-serif;
+body{
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
 }
-
-.image-container-footer img {
-    height: auto;
+.footer-brand-logo img {
     max-width: 200px;
-
-    object-fit: cover;
-    /* Add this property */
 }
-
-.footer {
-    padding-top: 4rem;
+.footer-container{
+    background-color: 	#1166b6e2;
+    max-width: 100%;
+    padding-top: 1rem;
+}
+.footer{
+    padding-top: 50px;
     display: grid;
-    grid-template-columns: auto auto auto  auto auto;
+    grid-template-columns: auto auto auto auto ;
+    gap: 5rem;
     padding-left: 8rem;
     padding-right: 9rem;
     padding-bottom: 6rem;
-
 }
-
-.imp-links-footer>ul {
+.Site{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-size: 12px;
+}
+ul{
+    list-style-type: none;
 
 }
 
-.social-links-footer>ul {
+.footer-address{
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: space-evenly;
+  padding-bottom: 5rem;
 }
-
-.footer-info {
-    font-size: 1rem;
-    text-decoration: underline;
+.news-letter{
+    margin-top: 5rem;
 }
-
-.Physical-Address-Footer {
-    font-size: 1.15rem;
-
-
-}
-
-.imp-links-footer ul {
-    list-style: none;
-}
-
-.social-links-footer ul {
-    list-style: none;
+.news-letter input{
+    padding: 10px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
 
 }
-
-.footer-arrow {
-    font-size: 1.45rem;
-
-}
-
-.footer-arrow-div {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-
-
-
-.footer-arrow-div button {
-    background-color: #007bff;
-    /* Button background color */
+.news-letter input::placeholder {
+    /* margin-top: 5rem; */
     color: white;
-    /* Button text color */
-    border: none;
-    border-radius: 50%;
-    /* Makes the button rounded */
-    width: 40px;
-    /* Button width */
-    height: 40px;
-    /* Button height */
-    font-size: 24px;
-    /* Adjust the font size as needed */
-    cursor: pointer;
 }
 
-.footer-arrow-div button li {
-    display: block;
-    text-align: center;
-}
-@media screen and (max-width: 480px) {
-   .footer{
-    grid-template-columns: auto;
-    padding: 10px;
-   }
-  }
-  .down-ward{
+.input-wrapper {
     display: flex;
-    justify-content:center ;
-    padding: 10px;
-    gap: 20px;
+    align-items: center; /* Vertically center the contents */
+}
+
+.input-wrapper input[type="email"] {
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .input-wrapper input[type="email"] {
+        flex-grow: 1;
+    }
+    
+   
+    
+}
+
+.underline{
+    height: 1px;
+    width: 10.5rem;
+    background-color: white;
+}
+.div-under{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        justify-content: center;
+        align-items: center;
+grid-template-columns: auto;
+margin-left: 20px;
+
+    }
+    .Site{
+        
+    }
+   
   }
