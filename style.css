@@ -1,0 +1,108 @@
+.Footer-container {
+    background-color: rgb(2, 1, 16);
+
+    color: white;
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+}
+
+.image-container-footer img {
+    height: auto;
+    max-width: 200px;
+
+    object-fit: cover;
+    /* Add this property */
+}
+
+.footer {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto  auto auto;
+    padding-left: 8rem;
+    padding-right: 9rem;
+    padding-bottom: 6rem;
+
+}
+
+.imp-links-footer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.social-links-footer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-info {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.Physical-Address-Footer {
+    font-size: 1.15rem;
+
+
+}
+
+.imp-links-footer ul {
+    list-style: none;
+}
+
+.social-links-footer ul {
+    list-style: none;
+
+}
+
+.footer-arrow {
+    font-size: 1.45rem;
+
+}
+
+.footer-arrow-div {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+
+.footer-arrow-div button {
+    background-color: #007bff;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    border-radius: 50%;
+    /* Makes the button rounded */
+    width: 40px;
+    /* Button width */
+    height: 40px;
+    /* Button height */
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    cursor: pointer;
+}
+
+.footer-arrow-div button li {
+    display: block;
+    text-align: center;
+}
+@media screen and (max-width: 480px) {
+   .footer{
+    grid-template-columns: auto;
+    padding: 10px;
+   }
+  }
+  .down-ward{
+    display: flex;
+    justify-content:center ;
+    padding: 10px;
+    gap: 20px;
+  }
